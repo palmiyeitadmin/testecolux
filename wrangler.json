@@ -1,0 +1,11 @@
+{
+    "name": "ekolux-web",
+    "compatibility_date": "2025-12-03",
+    "assets": {
+        "directory": "./dist",
+        "binding": "ASSETS"
+    },
+    "observability": {
+        "enabled": true
+    }
+}
