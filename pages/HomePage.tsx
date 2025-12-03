@@ -28,9 +28,9 @@ export const HomePage: React.FC = () => {
           />
         </div>
 
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-transparent">
+        <div className="absolute inset-0">
           <div className="max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
-            <div className="max-w-2xl text-white space-y-6">
+            <div className="max-w-2xl text-white space-y-6 bg-slate-900/60 backdrop-blur-sm rounded-lg p-8">
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center">
                   <div className="w-4 h-2 bg-black"></div>

@@ -13,8 +13,8 @@ export const MOCK_PRODUCTS: Product[] = [
     features: ['Compact Design', 'Manual Operation', 'Weather Resistant'],
     images: [
       '/assets/img/aero-1.jpg',
-      '/assets/img/aero-2.jpg',
-      '/assets/img/aero-3.jpg'
+      '/assets/img/aero-2.png',
+      '/assets/img/aero-3.png'
     ]
   },
   {
@@ -44,9 +44,9 @@ export const MOCK_PRODUCTS: Product[] = [
     description: 'Perfect for families, the NOVA offers a balanced footprint with robust structural integrity and sleek aesthetics.',
     features: ['Family Sized', 'UV Protection', 'Modular'],
     images: [
-      '/assets/img/nova-1.jpg',
-      '/assets/img/nova-2.jpg',
-      '/assets/img/nova-3.jpg'
+      '/assets/img/nova-1.png',
+      '/assets/img/nova-2.png',
+      '/assets/img/nova-3.png'
     ]
   },
   {
