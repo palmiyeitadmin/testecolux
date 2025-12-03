@@ -23,26 +23,25 @@ export const HomePage: React.FC = () => {
           <img
             src="/assets/img/hero-bg.png"
             alt="Luxury Outdoor Living"
-            className="w-full h-full object-cover object-center"
-            style={{ objectPosition: 'center center', transform: 'scale(1.2)' }}
+            className="w-full h-full object-cover object-left-[20px]"
+            style={{ objectPosition: '20px center', transform: 'scale(1.3)' }}
           />
         </div>
 
         <div className="absolute inset-0">
           <div className="max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
-            <div className="max-w-2xl text-white space-y-6 bg-slate-900/60 backdrop-blur-sm rounded-lg p-8">
+            <div className="max-w-2xl text-white space-y-6">
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center">
                   <div className="w-4 h-2 bg-black"></div>
                 </div>
-                <span className="text-xs font-bold tracking-widest uppercase">German Engineering</span>
               </div>
 
-              <h1 className="text-2xl md:text-4xl font-bold leading-tight">
+              <h1 className="text-2xl md:text-4xl font-bold leading-tight drop-shadow-2xl">
                 Premium Outdoor Living, <br />Now Within Reach.
               </h1>
 
-              <p className="text-lg text-gray-300 max-w-lg">
+              <p className="text-lg text-gray-300 max-w-lg drop-shadow-lg">
                 Minimal design, smooth manual control and a space that adapts to your everyday moments. Smart Engineering in Every Size.
               </p>
 
