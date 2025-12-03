@@ -17,14 +17,14 @@ export const HomePage: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[85vh] w-full bg-slate-900 overflow-hidden">
+      <section className="relative h-[85vh] w-full overflow-hidden">
         {/* Background Image Placeholder */}
         <div className="absolute inset-0">
           <img
             src="/assets/img/hero-bg.png"
             alt="Luxury Outdoor Living"
-            className="w-full h-full object-cover object-left-[100px]"
-            style={{ objectPosition: '100px center', transform: 'scale(1.5)' }}
+            className="w-full h-full object-cover object-center"
+            style={{ objectPosition: 'center center', transform: 'scale(1.2)' }}
           />
         </div>
 
