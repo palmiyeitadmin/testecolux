@@ -60,10 +60,10 @@ export const MOCK_PRODUCTS: Product[] = [
     description: 'Eco Luxx VISTA is our flagship lounge model. It removes the superfluous and restores the authentic value — it’s a pergola that moves with you.',
     features: ['Expansive Shade', 'Premium Finish', 'Integrated Gutter'],
     images: [
-      '/assets/img/vista-1.jpg',
-      '/assets/img/vista-2.jpg',
-      '/assets/img/vista-3.jpg',
-      '/assets/img/vista-4.jpg'
+      '/assets/img/vista-1.png',
+      '/assets/img/vista-2.png',
+      '/assets/img/vista-3.png',
+      '/assets/img/vista-4.png'
     ]
   },
   {
@@ -77,8 +77,8 @@ export const MOCK_PRODUCTS: Product[] = [
     description: 'The ultimate statement piece. The GRANDIS features a dual-zone roof system perfect for large patios and commercial spaces.',
     features: ['Dual Zone', 'Max Coverage', 'Commercial Grade'],
     images: [
-      '/assets/img/grandis-1.jpg',
-      '/assets/img/grandis-2.jpg'
+      '/assets/img/grandis-1.png',
+      '/assets/img/grandis-2.png'
     ]
   }
 ];

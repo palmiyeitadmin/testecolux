@@ -19,7 +19,7 @@ export const HomePage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[85vh] w-full bg-slate-900 overflow-hidden">
         {/* Background Image Placeholder */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-60">
           <img
             src="/assets/img/hero-bg.png"
             alt="Luxury Outdoor Living"
