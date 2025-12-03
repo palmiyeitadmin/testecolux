@@ -21,7 +21,7 @@ export const HomePage: React.FC = () => {
         {/* Background Image Placeholder */}
         <div className="absolute inset-0 opacity-60">
           <img
-            src="/assets/img/hero-bg.jpg"
+            src="/assets/img/hero-bg.png"
             alt="Luxury Outdoor Living"
             className="w-full h-full object-cover"
           />
@@ -37,7 +37,7 @@ export const HomePage: React.FC = () => {
                 <span className="text-xs font-bold tracking-widest uppercase">German Engineering</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              <h1 className="text-2xl md:text-4xl font-bold leading-tight">
                 Premium Outdoor Living, <br />Now Within Reach.
               </h1>
 
