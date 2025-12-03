@@ -2,8 +2,7 @@
     "name": "ecoluxtext",
     "compatibility_date": "2025-12-03",
     "assets": {
-        "directory": "./dist",
-        "binding": "ASSETS"
+        "directory": "./dist"
     },
     "observability": {
         "enabled": true
