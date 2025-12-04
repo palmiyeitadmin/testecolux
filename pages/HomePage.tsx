@@ -18,38 +18,45 @@ export const HomePage: React.FC = () => {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[85vh] w-full overflow-hidden">
-        {/* Background Image Placeholder */}
+        {/* Background Image Placeholder - Desktop/Mobile Responsive */}
         <div className="absolute inset-0">
+          {/* Desktop Image */}
           <img
             src="/assets/img/hero-bg.png"
             alt="Luxury Outdoor Living"
-            className="w-full h-full object-cover object-left-[20px]"
+            className="hidden md:block w-full h-full object-cover object-left-[20px]"
             style={{ objectPosition: '20px center', transform: 'scale(1.3)' }}
+          />
+          {/* Mobile Image */}
+          <img
+            src="/assets/img/hero-mobile-bg.png"
+            alt="Luxury Outdoor Living"
+            className="block md:hidden w-full h-full object-cover object-center"
           />
         </div>
 
         <div className="absolute inset-0">
           <div className="max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
-            <div className="max-w-2xl text-white space-y-6">
+            <div className="max-w-2xl text-black md:text-white space-y-6">
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center">
                   <div className="w-4 h-2 bg-black"></div>
                 </div>
               </div>
 
-              <h1 className="text-2xl md:text-4xl font-bold leading-tight drop-shadow-2xl">
+              <h1 className="text-2xl md:text-4xl font-bold leading-tight md:drop-shadow-2xl">
                 Premium Outdoor Living, <br />Now Within Reach.
               </h1>
 
-              <p className="text-lg text-gray-300 max-w-lg drop-shadow-lg">
+              <p className="text-lg text-gray-700 max-w-lg md:text-gray-300 md:drop-shadow-lg">
                 Minimal design, smooth manual control and a space that adapts to your everyday moments. Smart Engineering in Every Size.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button variant="secondary" onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}>
+                <Button variant="secondary" onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })} className="bg-gray-900 text-white md:bg-white md:text-black">
                   Explore Sizes <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
-                <Button variant="outline" className="text-white border-white hover:bg-white/10">
+                <Button variant="outline" className="border-gray-900 text-gray-900 hover:bg-gray-900/10 md:border-white md:text-white md:hover:bg-white/10">
                   Learn More
                 </Button>
               </div>
