@@ -32,8 +32,8 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex flex-col z-50">
-          <span className={`text-2xl font-bold tracking-tight ${isScrolled || location.pathname !== '/' ? 'text-slate-900' : 'text-slate-900 lg:text-white'}`}>Eco Luxx</span>
-          <span className={`text-[0.6rem] tracking-widest uppercase ${isScrolled || location.pathname !== '/' ? 'text-slate-500' : 'text-slate-500 lg:text-gray-200'}`}>Smart Pergola Systems</span>
+          <span className={`text-2xl font-bold tracking-tight ${isScrolled || location.pathname !== '/' ? 'text-slate-900' : 'text-white lg:text-white'}`}>Eco Luxx</span>
+          <span className={`text-[0.6rem] tracking-widest uppercase ${isScrolled || location.pathname !== '/' ? 'text-slate-500' : 'text-gray-200 lg:text-gray-200'}`}>Smart Pergola Systems</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -67,11 +67,11 @@ export const Header: React.FC = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
-          className="lg:hidden z-50 text-slate-900"
+        <button
+          className={`lg:hidden z-50 ${isScrolled || location.pathname !== '/' ? 'text-slate-900' : 'text-white'}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className={`w-6 h-6 ${isScrolled || location.pathname !== '/' ? 'text-slate-900' : 'text-slate-900 md:text-white'}`} />}
+          {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
 
         {/* Mobile Menu Overlay */}

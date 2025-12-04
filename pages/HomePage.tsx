@@ -22,14 +22,14 @@ export const HomePage: React.FC = () => {
         <div className="absolute inset-0">
           {/* Desktop Image */}
           <img
-            src="/assets/img/hero-bg.png"
+            src="/assets/img/hero-bg.jpg"
             alt="Luxury Outdoor Living"
             className="hidden md:block w-full h-full object-cover object-left-[20px]"
             style={{ objectPosition: '20px center', transform: 'scale(1.3)' }}
           />
           {/* Mobile Image */}
           <img
-            src="/assets/img/hero-mobile-bg.png"
+            src="/assets/img/hero-mobile-bg.jpg"
             alt="Luxury Outdoor Living"
             className="block md:hidden w-full h-full object-cover object-center"
           />
@@ -37,26 +37,29 @@ export const HomePage: React.FC = () => {
 
         <div className="absolute inset-0">
           <div className="max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
-            <div className="max-w-2xl text-black md:text-white space-y-6">
+            <div className="max-w-2xl text-white space-y-6">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center">
-                  <div className="w-4 h-2 bg-black"></div>
+                <div className="flex items-center justify-center">
+                  <img
+                    src="/assets/img/german-engineering-icon.png"
+                    className="w-20 h-20"
+                  />
                 </div>
               </div>
 
-              <h1 className="text-2xl md:text-4xl font-bold leading-tight md:drop-shadow-2xl">
+              <h1 className="text-2xl md:text-4xl font-bold leading-tight text-white drop-shadow-2xl">
                 Premium Outdoor Living, <br />Now Within Reach.
               </h1>
 
-              <p className="text-lg text-gray-700 max-w-lg md:text-gray-300 md:drop-shadow-lg">
+              <p className="text-md text-gray-200 max-w-lg drop-shadow-lg">
                 Minimal design, smooth manual control and a space that adapts to your everyday moments. Smart Engineering in Every Size.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button variant="secondary" onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })} className="bg-gray-900 text-white md:bg-white md:text-black">
+                <Button variant="secondary" onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })} className="bg-white text-gray-900 hover:bg-gray-100 drop-shadow-lg">
                   Explore Sizes <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
-                <Button variant="outline" className="border-gray-900 text-gray-900 hover:bg-gray-900/10 md:border-white md:text-white md:hover:bg-white/10">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 drop-shadow-lg">
                   Learn More
                 </Button>
               </div>
@@ -76,9 +79,9 @@ export const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {MOCK_PRODUCTS.map((product) => (
               <div key={product.id} className={`${product.id === 'grandis' ? 'md:col-span-2' : ''} group`}>
-                <div className="relative bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] md:aspect-video cursor-pointer" onClick={() => navigate(`/product/${product.id}`)}>
+                <div className={`relative bg-gray-100 rounded-lg overflow-hidden mb-6 cursor-pointer ${product.id === 'grandis' ? 'h-[450px]' : 'aspect-[4/3] md:aspect-video'}`} onClick={() => navigate(`/product/${product.id}`)}>
                   <img
-                    src={product.images[0]}
+                    src={product.images[1]}
                     alt={product.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
